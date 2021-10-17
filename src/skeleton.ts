@@ -4,7 +4,7 @@
  * @returns string
  */
 function spinLongWords(inputString: string): string {
-  let strArr = [];
+  const strArr = [];
   for (let word of splitString(inputString)) {
     if (word.length >= 5) {
       let reverseWord = "";
