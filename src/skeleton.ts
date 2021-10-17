@@ -1,11 +1,22 @@
 /**
  * Adds together two numbers
- * @param a - the first number to add
- * @param b - the second number to add
- * @returns the total
+ * @param inputString: string the string to manipulate
+ * @returns string
  */
-function sum(a: number, b: number): number {
-  return a + b;
+function spinLongWords(inputString: string): string {
+  let outString = ""
+  for (let word of splitString(inputString)) {
+    outString += word
+  }
+  return outString
 }
 
-export default sum;
+function splitString(inputString: string): string[] {
+  return inputString.split(" ");
+}
+
+const _ = {splitString, spinLongWords};
+export default _;
+
+// console.log(spinLongWords("I love banana"))
+// console.log(splitString("I love banana"))

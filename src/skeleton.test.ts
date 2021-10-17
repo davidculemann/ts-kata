@@ -1,5 +1,5 @@
-import sum from "./skeleton";
+import _ from "./skeleton";
 
-test("sum adds two numbers", () => {
-  expect(sum(4, 3)).toBe(7);
+test("splitString splits a string into an array of words", () => {
+  expect(_.splitString("I love banana")).toStrictEqual([ 'I', 'love', 'banana' ]);
 });
