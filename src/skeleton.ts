@@ -4,18 +4,18 @@
  * @returns string
  */
 function spinLongWords(inputString: string): string {
-  let outString = ""
+  let outString = "";
   for (let word of splitString(inputString)) {
-    outString += word
+    outString += word;
   }
-  return outString
+  return outString;
 }
 
 function splitString(inputString: string): string[] {
   return inputString.split(" ");
 }
 
-const _ = {splitString, spinLongWords};
+const _ = { splitString, spinLongWords };
 export default _;
 
 // console.log(spinLongWords("I love banana"))
