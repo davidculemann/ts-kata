@@ -5,7 +5,7 @@
  */
 function spinLongWords(inputString: string): string {
   let outString = "";
-  for (let word of splitString(inputString)) {
+  for (const word of splitString(inputString)) {
     outString += word;
   }
   return outString;
