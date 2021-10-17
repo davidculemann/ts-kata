@@ -7,15 +7,15 @@ function spinLongWords(inputString: string): string {
   let strArr = [];
   for (let word of splitString(inputString)) {
     if (word.length >= 5) {
-      let reverseWord = ""
-      for (let i = word.length -1; i >= 0; i--) {
+      let reverseWord = "";
+      for (let i = word.length - 1; i >= 0; i--) {
         reverseWord += word[i];
       }
-      word = reverseWord
+      word = reverseWord;
     }
     strArr.push(word);
   }
-  return strArr.join(' ');
+  return strArr.join(" ");
 }
 
 function splitString(inputString: string): string[] {
